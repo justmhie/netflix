@@ -57,7 +57,6 @@
     display: none; 
     padding: 8px 0; 
 }
-
 .navbar .dropdown p {
     font-size: 12px; 
     color: #fff; 
@@ -67,16 +66,32 @@
     border-radius: 4px; 
     transition: background 0.3s ease;  
 }
-
 .navbar .dropdown p:hover {
     background: #e50914; 
     color: #fff;
 }
-
 .navbar-profile:hover .dropdown {
     display: block; 
 }
-
 .nav-dark{
     background: rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 800px) {
+    .navbar{
+        padding: 20px 4%;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar img{
+        height: 25px;
+    }
+}
+@media (max-width: 500px) {
+    .navbar img{
+        height: 20px;
+    }
+    .navbar-right{
+        gap: 10px;
+    }
 }

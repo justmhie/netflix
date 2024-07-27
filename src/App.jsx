@@ -21,7 +21,7 @@ const App = () => {
         navigate('/login'); // Corrected the typo
       }
     });
-  }, [navigate]); // Added navigate as a dependency
+  }, []); // Added navigate as a dependency
 
   return (
     <div>
